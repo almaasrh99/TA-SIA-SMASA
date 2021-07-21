@@ -1,0 +1,219 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: rgb(252, 249, 249);
+    scroll-behavior: smooth ;
+    
+}
+.scrool {
+    background-color: #ebf0e6;
+    display:block;
+    border: 1px solid #3f7d0f;
+    padding:5px;
+    margin-top:5px;
+    margin-bottom: 50px;
+    width:100%;
+    height:auto;
+    overflow:scroll;
+
+}
+
+.bg {
+    background-image: url("../img/smasa.jpg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    z-index: -1;
+}
+
+.title {
+    opacity: 1;
+    position: absolute;    
+    left: 0;
+    top: 30%;
+    width: 100%;
+    text-align: center;  
+}
+
+.title span.subtitle {
+    z-index: 5;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;  
+}
+
+.tanggal {
+    border: solid 2px black;
+    width: 50px;
+}
+
+.footer {
+    background-color: #5a9e25;
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+    color: white;
+    text-align: center;
+    position:fixed;
+ 
+    /* display: block;
+    padding: 3px; */
+}
+.logo-smasa{
+    position: absolute;
+    margin-left: 70px;
+    margin-bottom: 2px;
+    align-items: center;
+
+}
+
+
+.margin {
+    margin-top: 100px;
+}
+
+.marginmd {
+    margin-top: 50px;
+}
+
+.marginxs {
+    margin-top: 25px;
+}
+
+.line {
+    color: inherit;
+}
+
+.h1 {
+  overflow: hidden;
+  text-align: center;
+}
+
+.h1:before,
+.h1:after {
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.h1:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.h1:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.main{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+  
+  }
+ 
+  .btn {
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-weight: 400;
+    display: block;
+    width: 30%;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    
+  }
+  
+  .btn:hover {
+    background-color: rgb(51, 136, 30);
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .cards_item {
+    display: flex;
+    padding: 1rem;
+  }
+  
+  @media (min-width: 40rem) {
+    .cards_item {
+      width: 50%;
+    }
+  }
+  
+  @media (min-width: 56rem) {
+    .cards_item {
+      width: 33.3333%;
+    }
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .card_content {
+    padding: 1rem;
+    background: linear-gradient(to bottom left, #dddada 40%, #e9e7e6 100%);
+  }
+  
+  .card_title {
+    color: #76c738;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin-top: 20px;
+  }
+  
+  .card_text {
+    color: #5e5e5e;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;    
+    font-weight: 400;
+  }
+ 
+/* Zoom In #1 */
+
+ .card_image img {
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+ }
+
+ .card_image :hover img{
+  -webkit-transform: scale(1.2);
+	transform: scale(1.2);
+ }
+
